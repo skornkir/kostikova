@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+sh-header, .sh-header-top-3, .sh-header-top-4, .sh-header-left-side .sh-header-search .line-test, .sh-header-left-2 .sh-nav > li > a, .sh-header-mobile-navigation {
+  border-bottom: 1px solid rgba( 0,0,0,0.08 );
+}
+.sh-header, .sh-header-top, .sh-header-mobile, .sh-header-left-side {
+  background-color: #fff;
+}
+.sh-header {
+  position: relative;
+  left: 0;
+}
+.sh-header {
+  border-bottom: 1px solid rgba( 0,0,0,0.08 );
+}
+.sh-sticky-header-active, .sh-sticky-mobile-header {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5000;
+}
+.sh-header {
+  position: relative;
+  background-color: #fff;
+}
+
+.sh-header:not(.sh-header-6) .container, .sh-header-top:not(.sh-header-top-6) .container {
+  width: 90%!important;
+  max-width: 90%!important;
+}
+.sh-header .container, .sh-header-top .container {
+  padding: 0 15px;
+  position: relative;
+}
+@media (min-width: 1250px){
+  .container {
+    max-width: 1200px!important;
+    width: 1200px!important;
+  }
+  .container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+}
+
+.sh-table {
+  display: table;
+  width: 100%;
+}
+
+.sh-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  float: none!important;
+}
+
+.header-logo {
+  padding: 15px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.sh-table-small {
+  display: table;
+}
+
+.sh-sticky-header-active .header-logo img {
+  height: auto;
+}
+.sh-sticky-header-active .sh-standard-logo {
+  display: none;
+}
+.header-logo img {
+  height: auto;
+  max-height: 250px;
+}
+.header-logo img {
+  margin-bottom: 0;
+}
