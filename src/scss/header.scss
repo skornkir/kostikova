@@ -8,7 +8,6 @@
   width: 100%;
   background: #000;
   .header{
-    display: flex;
     width: 1200px;
     margin: 0 auto;
     height: 70px;
@@ -34,7 +33,7 @@
         }
       }
     }
-    .mainmenu{
+    /*.mainmenu{
       display: flex;
       margin-left: auto;
       padding-top: 6px;
@@ -48,7 +47,7 @@
           font-weight: 500;
         }
       }
-    }
+    }*/
   }
 }
 
@@ -59,7 +58,6 @@
     width: 100%;
     background: #000;
     .header{
-      display: flex;
       width: 100%;
       margin: 0 auto;
       height: 70px;
@@ -85,9 +83,6 @@
             }
           }
         }
-      }
-      .mainmenu{
-        display: none;
       }
     }
   }

@@ -1,0 +1,75 @@
+.main-menu{
+  .container-menu {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    z-index: 1111111111111;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #fbfbfb;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  }
+  .container-menu.change{
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .bar2 {
+      opacity: 0;
+    }
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+  .mobile-nav-body{
+    z-index: 111;
+    display: none;
+    width: 100%;
+    top: 60px;
+    position: fixed;
+    background: #272727;
+    padding-bottom: 15px;
+    &.active{
+      display: block;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      li > a.active {
+        color: #ea5b0c;
+        border: none;
+      }
+
+      li{
+        list-style: none;
+        & > a,  & > span {
+          cursor: pointer;
+          -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+          -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+          -ms-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+          -o-transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+          transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
+          background-color: rgba(255, 255, 255, 0);
+          font-family: 'Roboto', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          font-style: normal;
+          text-transform: uppercase;
+          padding: 0 20px;
+          line-height: 52px;
+          /* height: 55px; */
+          display: block;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

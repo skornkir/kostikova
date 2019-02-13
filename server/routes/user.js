@@ -1,19 +1,23 @@
 module.exports = function (app, db) {
-  console.log('users')
-  const user = { phone: '89103103384', title: "title" };
-  app.get('/user',(req,res) =>{
-    db.collection('users').insertOne(user);
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('ura');
+  app.get('/users',(req,res) =>{
+    db.collection('users').find({}).toArray(function(error, documents) {
+      res.send(documents);
+    });
+
   })
-  app.post('/users',(req,res) =>{
-    db.collection('users').insertOne(user, (err, result) => {
+  app.post('/user',(req,res) =>{
+    console.log('post users')
+    db.collection('users').insertOne(req.body, (err, result) => {
+      console.log(req.body)
       if (err) {
-        res.send({ 'error': 'An error has occurred' });
+        res.statusCode = 500;
+        res.send('Error');
       } else {
-        res.send(result.ops[0]);
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'text/plain');
+        res.send('OK');
       }
+      console.log(req.body.name)
     });
   })
 }

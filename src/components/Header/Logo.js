@@ -1,8 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
+import Link from 'react-router-dom/es/Link';
 const Logo  = () => {
   return (
-    <div className="logo">
-    </div>
+    <Link to="/">
+      <div className="logo">
+      </div>
+    </Link>
   )
 }
 

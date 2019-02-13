@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import Logo from  './Logo'
-import SocialMenu from './SocialMenu'
-import MainMenu from './MainMenu'
+import MainMenu from './MainMenu/MainMenu'
 
 class Header extends Component {
 
@@ -22,7 +21,6 @@ class Header extends Component {
         <div className="header">
           <Logo></Logo>
           <MainMenu elements={this.state.elements}></MainMenu>
-          <SocialMenu></SocialMenu>
         </div>
       </div>
      )
