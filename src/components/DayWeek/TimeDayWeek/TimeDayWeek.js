@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ElementTimeDayWeek from './ElementTimeDayWeek';
+import ElementTimeDayWeek from '../ElementTimeDayWeek';
 
 class TimeDayWeek extends Component {
 

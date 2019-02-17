@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import Login from './components/Login'
 import AddProfile from  './components/Users/AddProfile'
 import ListUserPage from './components/Users/ListUserPage'
+import SchedulePage from './components/Schedule/SchedulePage'
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 import * as serviceWorker from './serviceWorker';
 
@@ -16,6 +16,7 @@ ReactDOM.render(
         <Route path="/user/add" component={AddProfile}/>
         <Route path="/login" component={Login} />
         <Route path="/" exact component={App} />
+        <Route path="/schedule" exact component={SchedulePage} />
       </Switch>
     </BrowserRouter>
   </div>,

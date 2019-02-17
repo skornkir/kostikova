@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import Logo from  './Logo'
-import MainMenu from './MainMenu/MainMenu'
+import Logo from '../Logo'
+import MainMenu from '../MainMenu/MainMenu'
+import './header.scss'
 
 class Header extends Component {
 
@@ -21,6 +22,9 @@ class Header extends Component {
         <div className="header">
           <Logo></Logo>
           <MainMenu elements={this.state.elements}></MainMenu>
+          <div className="login">
+            <img src="./images/login.png" />
+          </div>
         </div>
       </div>
      )

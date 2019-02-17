@@ -1,6 +1,6 @@
 import React from 'react'
 import './addprofile.scss'
-import Header from '../Header/Header';
+import Header from '../Header/Header/Header';
 import ListUser from './ListUser'
 
 const ListUserPage = (props) => {

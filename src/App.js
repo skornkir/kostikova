@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './components/Header/Header'
+import Header from './components/Header/Header/Header'
 import Content from './components/Content'
 import 'react-notifications/lib/notifications.css'
 

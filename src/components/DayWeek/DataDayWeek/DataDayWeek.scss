@@ -1,0 +1,40 @@
+.week{
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  .week-day{
+    width: 20%;
+    padding: 0 10px;
+    border-right: 1px solid #69686e;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    position: relative;
+    &.active{
+      color: #fff
+    }
+    &:nth-child(3){
+      color: #fff;
+    }
+    &:last-child{
+      border-right: 0;
+    }
+    .title-week-day{
+
+    }
+    .number-week-day{
+
+    }
+    .triangle{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7px 7px 7px;
+      border-color: transparent transparent #d41f07 transparent;
+      position: absolute;
+      bottom: -10px;
+      left: 38%;
+    }
+  }
+}
