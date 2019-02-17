@@ -2,12 +2,12 @@ import React from 'react'
 
 const ElementTimeDayWeek = (props) => {
   return (
-    <div className="element-time-day-week">
-      <div className="time">{props.time}</div>
-      <div className="body">
-        <div className="fio">{props.fio}</div>
-        <div className="club">{props.club}</div>
+    <div className="time-day-week">
+      <div className="time">
+        <div className="hours">{props.hours}</div>
+        <div className="minutes">{props.minutes}</div>
       </div>
+      <div className="surname">{props.surname}</div>
     </div>
   )
 }

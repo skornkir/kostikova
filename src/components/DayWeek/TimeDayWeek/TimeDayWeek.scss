@@ -1,0 +1,28 @@
+.time-day-week-container{
+  padding: 0 20px;
+  .time-day-week{
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    padding: 10px 10px;
+    .time{
+      display: flex;
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid rgba(255, 255, 255, 0.6);
+      .hours{
+        font-size: 20px;
+        padding-right: 3px;
+      }
+      .minutes{
+        text-decoration: underline;
+        font-size: 11px;
+        padding-top: 2px;
+      }
+    }
+    .surname{
+      line-height: 24px;
+    }
+  }
+}
+
